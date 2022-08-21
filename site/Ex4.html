@@ -1,0 +1,36 @@
+<html>
+<body>
+
+    <p>click the button</p>
+    
+   
+    First value
+    <input type="number" id="first" name="first"><br><br>
+    Second value
+    <input type="number" id="second" name="second"><br><br>
+    Third value
+    <input type="number" id="third" name="third"><br><br>
+    <button onclick="myfunction()">Submit</button>
+    
+
+
+    
+    <script>
+
+    function myfunction() {
+        let first = document.getElementById("first").value
+        let second = document.getElementById("second").value
+        let third = document.getElementById("third").value
+        let area = parseInt(first) + parseInt(second) + parseInt(third);
+        alert(area);
+        document.getElementById("line1").innerHTML =  area;
+
+    }
+    
+    
+    </script>
+<p id="line1"></p>
+</body>
+
+
+</html>

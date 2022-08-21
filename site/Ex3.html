@@ -1,0 +1,31 @@
+<html>
+<body>
+
+    <p>click the button</p>
+    <p id="line1"></p>
+    <p id="line2"></p>
+    
+    <script>
+
+    const today = new Date();
+
+    let month = today.getMonth() + 1;
+    let day = today.getDate() ;
+    let year = today.getFullYear();
+
+    if (month < 10) {
+        month = '0' + month;
+    }
+
+    if (day < 10){
+        day = '0' + day;
+    }
+
+    document.getElementById("line1").innerHTML =  month + " " + day + " " + year;
+    
+    </script>
+
+</body>
+
+
+</html>
